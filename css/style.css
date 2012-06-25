@@ -18,4 +18,4 @@ blockquote p{margin:0;padding:0;}
 #nav li a{display:block;padding: .7em 1em;color:#000}
 #nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;}
 #article {padding:.5em 0.4em;font-size:16px;}
-
+#article img{border:1px solid #999;}
