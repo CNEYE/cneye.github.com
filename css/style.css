@@ -10,7 +10,7 @@ dd {padding-left:1.2em;line-height:1.4em;}
 dd span {padding-right:10px;color:#999;font-family: "Galdeano","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
 p{padding:0.4em 0.1em;}
 blockquote{display: block;text-align: justify;border-left: 4px solid #DDD;margin: 1em 0em;padding-left: 1.5em;}
-blockquote p{margin:0;padding:0;}
+blockquote p{margin:0;padding:4px 0;}
 #container {width:600px;margin:0 auto;padding-top:25px;}
 #header {border-bottom: 1px solid #CCC;padding:.5em 0;}
 #nav {width:120px;margin-left:-160px;padding-right:40px;;float:left;font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.1em;text-transform: uppercase;}
