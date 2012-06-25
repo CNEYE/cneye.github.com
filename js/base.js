@@ -175,7 +175,7 @@
 		entry : function(options){
 			this.url  = options.url;
 			this.type = options.type;
-			this.success = options.sucess;
+			this.success = options.success;
 			this.data = this.getData(options.data || {});
 			if(this.type === 'get' && this.data){
 				this.url  += (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
