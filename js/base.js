@@ -177,6 +177,7 @@
 			this.type = options.type;
 			this.success = options.success;
 			this.data = this.getData(options.data || {});
+			this.dataType = options.dataType || 'json';
 			if(this.type === 'get' && this.data){
 				this.url  += (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
 				this.data = null;
@@ -192,9 +193,13 @@
 			
 				if(self.xhr.readyState == 4 && self.xhr.status==200){
 					var data = '';
-					try{
-						data = (new Function('return '+self.xhr.responseText))();
-					}catch(e){window.console && console.log(e,e.message);}
+					if(self.dataType =='json'){
+						try{
+							data = (new Function('return '+self.xhr.responseText))();
+						}catch(e){window.console && console.log(e,e.message);}
+					}else{
+						data = self.xhr.responseText;
+					}
 					self.success && self.success(data);
 					self.xhr.onreadystatechange = null;
 				}
