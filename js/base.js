@@ -88,7 +88,7 @@
 					if( match = statement.match(regrif)){
 						ret = 'if('+JSmart_equal(prefix,statement)+')';
 					}else if( match = statement.match()){
-						ret = Incluce.replace( regrplugin,match[1] )
+						ret = Include.replace( regrplugin,match[1] )
 									 .replace('{data}',JSmart_equal(prefix,match[2]) );
 					}
 					break;
