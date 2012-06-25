@@ -96,21 +96,23 @@
 				//deal width the foreach / for 语句
 				case 'F':
 					//foreach
-					if( (match = statement.match(regrforeach)) && ( prefix = match[2]) ){
+					if( (match = statement.match(regrforeach)) && ( prefix = match[1]) ){
 
 						helper = [prefix+(++uuid)+'__D',prefix+uuid+'__I',prefix+uuid+'__L'];
 
-						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[1]),
+						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[2]),
 										',',helper[1],'=0,',helper[2],'=',helper[0],'.length;',helper[1],'<',helper[2],
 									 	';',helper[1],'++){var ',prefix,'=',helper[0],'[',helper[1],'];'
 							  ].join('');
+							  
 
 					}else if( match = statement.match(regrfor)){
 						
 						ret = 'for('+JSmart_equal(prefix,match[1])+'){';
 					}
 
-					prevel.push(prefix) && level.push('');
+					prevel.push(prefix) ;
+					level.push('');
 					break;
 				default:
 					throw new Error('Does not support the template format:['+statement+']');
