@@ -83,6 +83,16 @@
 									 .replace('{data}',JSmart_equal(prefix,match[2]) );
 					}
 					break;
+				//deal width if / include statement
+				case 'I':
+					if( match = statement.match(regrif)){
+						ret = 'if('+JSmart_equal(prefix,statement)+')';
+					}else if( match = statement.match()){
+						ret = Incluce.replace( regrplugin,match[1] )
+									 .replace('{data}',JSmart_equal(prefix,match[2]) );
+					}
+					break;
+				//deal width the foreach / for 语句
 				//deal width the foreach / for 语句
 				case 'F':
 					//foreach
