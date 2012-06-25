@@ -37,9 +37,6 @@
 			{/foreach ($data as $one)/}
 			<dl>
 				<dt><h2>{/$one.title/}</h2></dt>
-				{/foreach ($one.content as $item)/}
-				<dd><span>{/include plugin=actname data=$item.time/}</span>{/include plugin=actlink data=$item/}</dd>
-				{//foreach/}
 			</dl>
 			{//foreach/}
 		</script>
