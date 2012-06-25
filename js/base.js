@@ -188,6 +188,7 @@
 			this.xhr = this.getXHR();
 			
 			this.xhr.open(this.type.toUpperCase(),this.url,true);
+			console.log(this.xhr);
 			this.xhr.onreadystatechange = function(){
 				
 				if(self.xhr.status == 4 && self.xhr.status==200){
