@@ -166,7 +166,7 @@
 (function(){
 	var ajax = function(options){
 		if(!(this instanceof arguments.callee)){
-			return arguments.callee(options);
+			return new arguments.callee(options);
 		}
 		this.entry(options);
 		this.init();
@@ -176,7 +176,7 @@
 			this.url  = options.url;
 			this.type = options.type;
 			this.success = options.sucess;
-			this.data = this.getData(options.data);
+			this.data = this.getData(options.data || {});
 			if(this.type === 'get'){
 				this.url = (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
 				this.data = null;
@@ -196,6 +196,7 @@
 						data = (new Function('return '+self.xhr.responseText))();
 					}catch(e){window.console && console.log(e,e.message);}
 					self.success && self.success(data);
+					this.xhr.onreadystatechange = null;
 				}
 			};
 			this.xhr.send(this.data);
