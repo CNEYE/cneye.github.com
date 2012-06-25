@@ -127,7 +127,6 @@
 
 		try {
 			ret =  new Function('__data__','$plugin',Print[0]+'$plugin=$plugin||JSmart.plugin;try{' + compiled.join('') + '}catch(e){JSmart.stack.push({e:e,message:e.message()});window.console && console.log(e,e.message())};return '+Print[3]);
-			//console.log(ret);
 			return JSmart.plugin(id,function(data){
 				return ret(data,JSmart.plugin);
 			});
