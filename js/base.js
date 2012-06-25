@@ -78,8 +78,6 @@
 							ret += 'if('+JSmart_equal(prefix,statement)+')';
 						}
 						ret += '{';
-					}
-					break;
 					}else if( match = statement.match()){
 						ret = Incluce.replace( regrplugin,match[1] )
 									 .replace('{data}',JSmart_equal(prefix,match[2]) );
