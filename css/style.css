@@ -1,4 +1,4 @@
-body {font-size:14px; -webkit-text-size-adjust: 100%;font-family: Georgia, "Microsoft YaHei", serif;}
+body {font-size:14px;font-family: Georgia, "Microsoft YaHei", serif;}
 div,span,li,ul,code,pre,img,blockquote,a,dl,dt,dd{margin:0;padding:0;border:0}
 h1 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 2em;color:black;padding:5px;margin:0}
 h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0}
@@ -8,7 +8,6 @@ ol,ul{list-style-position:inside;}
 dl {padding-bottom:0.5em;overflow:hidden;}
 dd {padding-left:1.2em;line-height:1.4em;}
 dd span {padding-right:10px;color:#999;font-family: "Galdeano","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
-
 #container {width:600px;margin:0 auto;padding-top:25px;}
 #header {border-bottom: 1px solid #CCC;padding:.5em 0;}
 #nav {width:120px;margin-left:-160px;padding-right:40px;;float:left;font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.1em;text-transform: uppercase;}
