@@ -60,9 +60,18 @@
 				url  : '/html/index',
 				type : 'get',
 				success : function(data){
-					data = data.sort(function(){
-						
+					data.sort(function(a,b){
+						if(a.title>b.title)return 1;
+						if(a.title<b.title)return -1;
+						return 0;
 					});
+					for(var len = data.length-1;len>=0;len--){
+						data[len]['content'].sort(function(a,b){
+							if(a.time>b.time)return 1;
+							if(a.time<b.time)return -1;
+							return 0;
+						});
+					}
 					var html = smart({data:data});
 					document.getElementById('article').innerHTML = html;
 				}
