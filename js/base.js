@@ -192,7 +192,6 @@
 			
 				if(self.xhr.readyState == 4 && self.xhr.status==200){
 					var data = '';
-					console.log(self.xhr.responseText);
 					try{
 						data = (new Function('return '+self.xhr.responseText))();
 					}catch(e){window.console && console.log(e,e.message);}
