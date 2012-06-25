@@ -115,7 +115,9 @@
 		end && compiled.push( Print[1] + '"' + end + '"' + Print[2] );
 
 		try {
+			console.log(compiled);
 			ret =  new Function('__data__','$plugin',Print[0]+'try{' + compiled.join('') + '}catch(e){JSmart.stack.push({e:e,message:e.message();});window.console && console.log(e,e.message())};return '+Print[3]);
+			
 			return JSmart.plugin(id,function(data){
 				ret(data,JSmart.plugin);
 			});
