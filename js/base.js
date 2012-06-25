@@ -178,7 +178,7 @@
 			this.success = options.sucess;
 			this.data = this.getData(options.data || {});
 			if(this.type === 'get'){
-				this.url = (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
+				this.url  += (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
 				this.data = null;
 			}
 		},
