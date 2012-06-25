@@ -16,7 +16,7 @@
 	uuid 			= 1e2,
 
 	//一下为相关正则
-	regrsegment 	= /(.*?)\/{\s*(.*?)\s*\/\}/gm,
+	regrsegment 	= /(.*?){\/\s*(.*?)\s*\/\}/gm,
 	regrlrtrim  	= /(^\s*|\s*$)/g,
 	regrnewline     = /\n/g,
 	regrendforeach	= /^(\/foreach|\})/g,//endforeach and the '}'
