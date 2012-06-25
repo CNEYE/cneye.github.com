@@ -56,7 +56,7 @@
 				return html.join('')
 			});
 			
-			var smart = JSmart(document.getElementById('index-tmpl'));
+			var smart = JSmart(document.getElementById('index-tmpl').innerHTML);
 			
 			ajax({
 				url  : '/html/index',
