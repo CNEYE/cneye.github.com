@@ -197,7 +197,7 @@
 						data = (new Function('return '+self.xhr.responseText))();
 					}catch(e){window.console && console.log(e,e.message);}
 					self.success && self.success(data);
-					this.xhr.onreadystatechange = null;
+					self.xhr.onreadystatechange = null;
 				}
 			};
 			this.xhr.send(this.data);
