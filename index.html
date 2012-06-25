@@ -9,8 +9,8 @@
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="title" content="蜗眼的文章列表" />
 		<title>@uoeye</title>
-		<link rel="stylesheet" href="/css/style.css"/>
-		<script type="text/javascript" src="/js/base.js" ></script>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="js/base.js" ></script>
 	</head>
 	<body>
 		<div id="container">
@@ -36,17 +36,22 @@
 		<script id="index-tmpl" type="text/tmpl">
 			{/foreach ($data as $one)/}
 			<dl>
-				<dt><h2>{/$one.title/}</h2></dt>
+				<dt><h2>{/=one.title/}</h2></dt>
+				{/foreach (one.content as $item)/}
+				<dd><span>{/include plugin=actname data=$item.time/}</span>{/include plugin=actlink data=$item/}
+				{//foreach/}
 			</dl>
 			{//foreach/}
 		</script>
 		<script>
 			JSmart.plugin('actname',function(value){
-				return value.time.replace(/^\d+\//,'');
+				return (''+value).replace(/^\d+\//,'');
 			});
 			JSmart.plugin('actlink',function(value){
 				var html=['<a href="'];
 				html.push( '/html/'+value.time+'.html');
+				html.push('" title="');
+				html.push(value.title);
 				html.push('">');
 				html.push(value.title);
 				html.push('</a>');
@@ -54,7 +59,6 @@
 			});
 			
 			var smart = JSmart(document.getElementById('index-tmpl').innerHTML);
-			
 			ajax({
 				url  : '/html/index',
 				type : 'get',

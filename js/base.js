@@ -22,7 +22,7 @@
 	regrendforeach	= /^(\/foreach|\})/g,//endforeach and the '}'
 	regrelseif      = /^else\s*(?:(if)\s*\(?([^\)]*))?/i,
 	regrif			= /if\s*\(?([^\)]*)/i,
-	regrforeach 	= /foreach\s*\(?\s*\$?([^\s]*)\s*as\s*([^\s\)]*)/i,
+	regrforeach 	= /foreach\s*\(?\s*([^\s]*)\s*as\s*\$?([^\s\)]*)/i,
 	regrfor			= /for\s*\(?([^\)]*)\)?\s*\{?/,
 	regrinclude		= /include\s+(?:plugin|smart)\s*=['"]?([^\s'"]+)\s+data\s*=['"]?([^\s'"]*)/i,
 	regrplugin		= /\{plugin\}/g,
@@ -96,11 +96,11 @@
 				//deal width the foreach / for 语句
 				case 'F':
 					//foreach
-					if( (match = statement.match(regrforeach)) && ( prefix = match[1]) ){
+					if( (match = statement.match(regrforeach)) && ( prefix = match[2]) ){
 
 						helper = [prefix+(++uuid)+'__D',prefix+uuid+'__I',prefix+uuid+'__L'];
 
-						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[2]),
+						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[1]),
 										',',helper[1],'=0,',helper[2],'=',helper[0],'.length;',helper[1],'<',helper[2],
 									 	';',helper[1],'++){var ',prefix,'=',helper[0],'[',helper[1],'];'
 							  ].join('');
@@ -111,8 +111,7 @@
 						ret = 'for('+JSmart_equal(prefix,match[1])+'){';
 					}
 
-					prevel.push(prefix) ;
-					level.push('');
+					prevel.push(prefix) && level.push('');
 					break;
 				default:
 					throw new Error('Does not support the template format:['+statement+']');
@@ -127,12 +126,12 @@
 		end && compiled.push( Print[1] + '"' + end + '"' + Print[2] );
 
 		try {
-			console.log(compiled.join(''));
-			ret =  new Function('__data__','$plugin',Print[0]+'try{' + compiled.join('') + '}catch(e){JSmart.stack.push({e:e,message:e.message();});window.console && console.log(e,e.message())};return '+Print[3]);
-			
+			ret =  new Function('__data__','$plugin',Print[0]+'$plugin=$plugin||JSmart.plugin;try{' + compiled.join('') + '}catch(e){JSmart.stack.push({e:e,message:e.message()});window.console && console.log(e,e.message())};return '+Print[3]);
+			//console.log(ret);
 			return JSmart.plugin(id,function(data){
-				ret(data,JSmart.plugin);
+				return ret(data,JSmart.plugin);
 			});
+		
 		}catch(e){
 			window.console && console.log(e);
 		}
