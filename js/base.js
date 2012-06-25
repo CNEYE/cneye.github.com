@@ -100,7 +100,7 @@
 
 						helper = [prefix+(++uuid)+'__D',prefix+uuid+'__I',prefix+uuid+'__L'];
 
-						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[2]),
+						ret = ['for(var ',helper[0],'=',JSmart_equal(prevel.join('.') || '__data__',match[1]),
 										',',helper[1],'=0,',helper[2],'=',helper[0],'.length;',helper[1],'<',helper[2],
 									 	';',helper[1],'++){var ',prefix,'=',helper[0],'[',helper[1],'];'
 							  ].join('');
