@@ -177,7 +177,7 @@
 			this.type = options.type;
 			this.success = options.sucess;
 			this.data = this.getData(options.data || {});
-			if(this.type === 'get'){
+			if(this.type === 'get' && this.data){
 				this.url  += (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
 				this.data = null;
 			}
