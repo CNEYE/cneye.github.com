@@ -132,7 +132,7 @@
 				ret(data,JSmart.plugin);
 			});
 		}catch(e){
-			window.console && console.log(e,e.message());
+			window.console && console.log(e);
 		}
 	}
 	/*
