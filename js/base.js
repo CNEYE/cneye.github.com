@@ -30,7 +30,7 @@
 	//打印字符串
 	Print  			= isNewEngine ? ['var __output__ ="";','__output__+=',';','__output__']
 						 : ['var __output__ =[];','__output__.push(',');','__output__.join("")'],
-	Include         = '$plugin(\'{plugin}\') && ('+Print[1]+'$plugin(\'{plugin}\')({data})'+Print[2]+')';
+	Include         = '$plugin(\'{plugin}\') && ('+Print[1]+'$plugin(\'{plugin}\')({data})'+Print[2].replace(';','')+');';
 	//缓存信息
 	Cache 			= {};
 
