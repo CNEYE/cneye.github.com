@@ -87,8 +87,7 @@
 				case 'I':
 					if( match = statement.match(regrif)){
 						ret = 'if('+JSmart_equal(prefix,statement)+')';
-					}else if( match = statement.match()){
-						console.log(match);
+					}else if( match = statement.match(regrinclude)){
 						ret = Include.replace( regrplugin,match[1] )
 									 .replace('{data}',JSmart_equal(prefix,match[2]) );
 					}
