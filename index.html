@@ -10,6 +10,7 @@
 		<meta name="title" content="蜗眼的文章列表" />
 		<title>@uoeye</title>
 		<link rel="stylesheet" href="/css/style.css"/>
+		<script type="text/javascript" src="/js/base.js" ></script>
 	</head>
 	<body>
 		<div id="container">
@@ -32,5 +33,39 @@
 				</dl>
 			</div>
 		</div>
+		<script id="index-tmpl" type="text/tmpl">
+			{/foreach ($data as $one)/}
+			<dl>
+				<dt><h2>{/$one.title/}</h2></dt>
+				{/foreach ($one.content as $item)/}
+				<dd><span>{/include plugin=actname data=$item.time/}</span>{/include plugin=actlink data=$item/}</dd>
+				{//foreach/}
+			</dl>
+			{//foreach/}
+		</script>
+		<script>
+			JSmart.plugin('actname',function(value){
+				return value.time.replace(/^\d+\//,'');
+			});
+			JSmart.plugin('actlink',function(value){
+				var html=['<a href="'];
+				html.push( '/html/'value.time+'.html');
+				html.push('">');
+				html.push(value.title);
+				html.push('</a>');
+				return html.join('')
+			});
+			
+			var smart = JSmart(document.getElementById('index-tmpl'));
+			
+			ajax({
+				url  : '/html/index',
+				type : 'get',
+				success : function(data){
+					var html = smart({data:data});
+					document.getElementById('article').innerHTML = html;
+				}
+			});
+		</script>
 	</body>
 </html>
