@@ -96,7 +96,7 @@
 				//deal width the foreach / for 语句
 				case 'F':
 					//foreach
-					if( (match = statement.match(regrforeach)) && ( prefix = match[1]) ){
+					if( (match = statement.match(regrforeach)) && ( prefix = match[2]) ){
 
 						helper = [prefix+(++uuid)+'__D',prefix+uuid+'__I',prefix+uuid+'__L'];
 
