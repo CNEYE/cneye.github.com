@@ -27,10 +27,7 @@
 				</ul>
 			</div>
 			<div id="article">
-				<dl>
-					<dt><h2>2012</h2></dt>
-					<dd><span>06/25</span><a href="#">Hello world</a></dd>
-				</dl>
+				<p>正在加载...</p>
 			</div>
 		</div>
 		<script id="index-tmpl" type="text/tmpl">
@@ -63,6 +60,9 @@
 				url  : '/html/index',
 				type : 'get',
 				success : function(data){
+					data = data.sort(function(){
+						
+					});
 					var html = smart({data:data});
 					document.getElementById('article').innerHTML = html;
 				}
