@@ -41,43 +41,7 @@
 			{//foreach/}
 		</script>
 		<script>
-			JSmart.plugin('actname',function(value){
-				return (''+value).replace(/^\d+\//,'');
-			});
-			JSmart.plugin('actlink',function(value){
-				var html=['<a href="'];
-				html.push( '/html/'+value.time+'.html');
-				html.push('" title="');
-				html.push(value.title);
-				html.push('">');
-				html.push(value.title);
-				html.push('</a>');
-				return html.join('')
-			});
-			
-			var smart = JSmart(document.getElementById('index-tmpl').innerHTML);
-			
-			ajax({
-				url  : '/html/index',
-				type : 'get',
-				success : function(data){
-					data.sort(function(a,b){
-						if(a.title>b.title)return -1;
-						if(a.title<b.title)return 1;
-						return 0;
-					});
-					
-					for(var len = data.length-1;len>=0;len--){
-						data[len]['content'].sort(function(a,b){
-							if(a.time>b.time)return -1;
-							if(a.time<b.time)return 1;
-							return 0;
-						});
-					}
-					var html = smart({data:data});
-					document.getElementById('article').innerHTML = html;
-				}
-			});
+			eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('g.i(\'r\',9(5){3(\'\'+5).s(/^\\d+\\//,\'\')});g.i(\'q\',9(5){e 2=[\'<a u="\'];2.7(\'/2/\'+5.8+\'.2\');2.7(\'" 4="\');2.7(5.4);2.7(\'">\');2.7(5.4);2.7(\'</a>\');3 2.p(\'\')});e n=g(m.l(\'j-o\').k);t({w:\'/2/j\',B:\'C\',A:9(6){6.h(9(a,b){c(a.4>b.4)3-1;c(a.4<b.4)3 1;3 0});y(e f=6.v-1;f>=0;f--){6[f][\'z\'].h(9(a,b){c(a.8>b.8)3-1;c(a.8<b.8)3 1;3 0})}e 2=n({6:6});m.l(\'x\').k=2}});',39,39,'||html|return|title|value|data|push|time|function|||if||var|len|JSmart|sort|plugin|index|innerHTML|getElementById|document|smart|tmpl|join|actlink|actname|replace|ajax|href|length|url|article|for|content|success|type|get'.split('|'),0,{}))
 		</script>
 	</body>
 </html>

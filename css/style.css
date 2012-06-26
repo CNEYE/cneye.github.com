@@ -1,5 +1,5 @@
 body {font-size:14px;font-family: Georgia, "Microsoft YaHei", serif;}
-div,span,li,ul,code,pre,img,blockquote,a,dl,dt,dd{margin:0;padding:0;border:0}
+div,span,li,ul,code,pre,img,blockquote,a,dl,dt,dd,p,form{margin:0;padding:0;border:0}
 h1 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 2em;color:black;padding:5px;margin:0}
 h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0}
 a{color: #1863A1;text-decoration: none;}
@@ -20,3 +20,26 @@ blockquote p{margin:0;padding:4px 0;}
 #article {padding:.5em 0.4em;font-size:16px;}
 #article img{border:1px solid #999;}
 #article pre {background:#f8f8f8;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:13px;line-height:19px;padding:6px 10px;overflow:auto;}
+
+#comment {padding-top:10px;font-size:14px;line-height:22px;padding-bottom:50px;}
+#comhead {border-bottom:1px dashed #ccc;padding-top:10px;height:25px}
+.fl{float:left;}
+.fr{float:right;}
+.ml30{margin-right:10px;color:#ccc;float:right;}
+#comcont ul,#comcont li {list-style:none;padding:4px 0;}
+#comcont li p.head{line-height:25px;height:25px;padding:.1em 0;position:relative;}
+#comcont li p.head b{width:35px;font-size:22px;color:#ddd;position:absolute;display:block;top:0px;left:-5px;z-index:-1;}
+#comcont li p.head .fl{position:absolute;left:37px;text-shadow:#ffc ;color:#aaa;}
+#comcont li p.comment{display:block;text-indent:2em;margin:0 5px;padding:10px;background:#f6f6f6;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+#comcont li p.comment span.time{color:#ccc;padding-left:10px;}
+
+#compost li, #compost ul{list-style:none;}
+#compost li{padding:5px ;}
+#compost li input{width: 220px;height: 19px;line-height: 19px;border-color: #7C7C7C #BBB #BBB #7C7C7C;border-style: solid;border-width: 1px;color: #777;font-family: Arial,"宋体";font-size: 14px;line-height: normal;padding: 5px 4px 2px 4px;}
+#compost li textarea {width: 420px;height: 130px;border-color: #7C7C7C #BBB #BBB;border-style: solid;border-width: 1px;color: #777;font-family: Arial,"宋体";font-size: 14px;line-height: normal;padding: 3px 4px !important;}
+#compost h4{padding:0;margin:0;margin-bottom:5px;font-size:16px;font-weight:normal;}
+#compost {padding-top:20px;}
+#compost li.btn input{padding:0;width:50px;height:25px;line-height:25px;cursor:pointer;;margin-left:380px;border-color:  #BBB #7C7C7C #7C7C7C #BBB;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#fdfdfd;}
+#compost li.btn input.active{border-color: #7C7C7C #BBB #BBB #7C7C7C;text-indent:1px;line-height:26px;}
+#compost li.btn input:hover{background:#f1f1f1;}
+
