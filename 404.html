@@ -33,22 +33,33 @@
 		</div>
 		<script type="text/javascript" src="/js/article.js"></script>
 		<script>
-			var match = /^([\w\s]*)\n=+/m;
-			ajax({
-				url:'/html/201206/05',
-				type:'get',
-				dataType : 'html',
-				success:function(html){
-					var title = html.match(match);
-					console.log(html);
-					window.html = html;
-					if(title){
-						document.getElementById('header').getElementsByTagName('h1')[0].innerHTML = title[1];
-						html = html.replace(match);
+			var match = /([^\n]+)\n=+/m;
+			var year  = /[12][90][0-9]{2,2}/;
+			var month = /[10][0-9]/;
+			var day   = /[0123][0-9]/;
+			var header  = document.getElementById('header').getElementsByTagName('h1')[0];
+			var content = document.getElementById('article');
+			var url   = window.location.pathname.toLowerCase().replace(/(^\/|\.html$)/ig,'').split('/');
+			
+			if(url[0] =='html' && (year.test(url[1]) && month.test(url[2]) && day.test(url[3]))){
+				url = [url[0],url[1]+url[2],url[3]].join('/'); 
+				ajax({
+					url:url,
+					type:'get',
+					dataType : 'html',
+					success:function(html){
+						var title = html.match(match);
+						if(title){
+							header.innerHTML = title[1];
+							html = html.replace(match);
+						}
+						content.innerHTML=markdown.toHTML(html);
 					}
-					document.getElementById('article').innerHTML=markdown.toHTML(html);
-				}
-			});
+				});
+			}else{
+				header.innerHTML = 'sorry！';
+				content.innerHTML = '这个页面在宇宙中丢失了。<a href="/">返回首页</a>';
+			}
 		</script>
 	</body>
 </html>
