@@ -26,7 +26,7 @@ blockquote p{margin:0;padding:4px 0;}
 .fl{float:left;}
 .fr{float:right;}
 .ml30{margin-right:10px;color:#ccc;float:right;}
-#comcont ul,#comcont li {list-style:none;padding:4px 0;}
+#comcont ul,#comcont li {list-style:none;padding:4px 0;line-height:20px;}
 #comcont li p.head{line-height:25px;height:25px;padding:.1em 0;position:relative;}
 #comcont li p.head b{width:35px;font-size:22px;color:#ddd;position:absolute;display:block;top:0px;left:-5px;z-index:-1;}
 #comcont li p.head .fl{position:absolute;left:37px;text-shadow:#ffc ;color:#aaa;}
