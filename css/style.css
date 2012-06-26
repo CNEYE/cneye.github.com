@@ -17,7 +17,7 @@ blockquote p{margin:0;padding:4px 0;}
 #nav li,#nav ul{list-style:none;}
 #nav li a{display:block;padding: .7em 1em;padding-right:0;color:#000}
 #nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;}
-#article {padding:.5em 0.4em;font-size:16px;}
+#article {padding:.5em 0.4em;font-size:16px;line-height:20px;}
 #article img{border:1px solid #999;}
 #article pre {background:#f8f8f8;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:13px;line-height:19px;padding:6px 10px;overflow:auto;}
 
@@ -26,7 +26,7 @@ blockquote p{margin:0;padding:4px 0;}
 .fl{float:left;}
 .fr{float:right;}
 .ml30{margin-right:10px;color:#ccc;float:right;}
-#comcont ul,#comcont li {list-style:none;padding:4px 0;line-height:20px;}
+#comcont ul,#comcont li {list-style:none;padding:4px 0;}
 #comcont li p.head{line-height:25px;height:25px;padding:.1em 0;position:relative;}
 #comcont li p.head b{width:35px;font-size:22px;color:#ddd;position:absolute;display:block;top:0px;left:-5px;z-index:-1;}
 #comcont li p.head .fl{position:absolute;left:37px;text-shadow:#ffc ;color:#aaa;}
