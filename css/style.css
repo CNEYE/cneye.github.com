@@ -43,3 +43,4 @@ blockquote p{margin:0;padding:4px 0;}
 #compost li.btn input.active{border-color: #7C7C7C #BBB #BBB #7C7C7C;text-indent:1px;line-height:26px;}
 #compost li.btn input:hover{background:#f1f1f1;}
 
+blockquote ol{padding:0;}
