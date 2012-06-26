@@ -1,7 +1,7 @@
 body {font-size:14px;font-family: Georgia, "Microsoft YaHei", serif;}
 div,span,li,ol,ul,code,pre,img,blockquote,a,dl,dt,dd,p,form{margin:0;padding:0;border:0}
-h1 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 2em;color:black;padding:5px;margin:0;text-shadow:#888 2px 2px 2px; }
-h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0;text-shadow:#999 1px 1px 1px; }
+h1 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 2em;color:black;padding:5px;margin:0;text-shadow:#888 2px 2px 9px; }
+h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0;text-shadow:#999 1px 1px 10px; }
 a{color: #1863A1;text-decoration: none;}
 a:hover{color:#0181EB;text-decoration:underline;}
 ol,ul{list-style-position:inside;}
@@ -15,8 +15,8 @@ blockquote p{margin:0;padding:4px 0;}
 #header {border-bottom: 1px solid #CCC;padding:.5em 0;}
 #nav {width:120px;margin-left:-160px;padding-right:40px;;float:left;font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.1em;text-transform: uppercase;}
 #nav li,#nav ul{list-style:none;}
-#nav li a{display:block;padding: .7em 1em;padding-right:0;color:#000;text-shadow:#888 1px 1px 1px;}
-#nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;text-shadow:#fcfcfc 1px 1px 1px;}
+#nav li a{display:block;padding: .7em 1em;padding-right:0;color:#000;text-shadow:#ccc 1px 1px 7px;}
+#nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;text-shadow:#fcfcfc 1px 1px 7px;}
 #article {padding:.5em 0.4em;font-size:16px;line-height:20px;}
 #article img{border:1px solid #999;}
 #article pre {background:#f8f8f8;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:13px;line-height:19px;padding:6px 10px;overflow:auto;}
