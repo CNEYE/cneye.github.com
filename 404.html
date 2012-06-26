@@ -50,9 +50,13 @@
 						var title = html.match(match);
 						if(title){
 							header.innerHTML = title[1];
-							html = html.replace(match);
+							html = html.replace(match,'');
 						}
 						content.innerHTML=markdown.toHTML(html);
+					},
+					error : function(){
+						header.innerHTML = 'sorry！';
+						content.innerHTML = '这个页面在宇宙中丢失了。<a href="/">返回首页</a>';
 					}
 				});
 			}else{

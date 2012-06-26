@@ -178,10 +178,19 @@
 			this.success = options.success;
 			this.data = this.getData(options.data || {});
 			this.dataType = options.dataType || 'json';
+			this.error = options.error;
 			if(this.type === 'get' && this.data){
 				this.url  += (this.url.indexOf('?')>-1 ? '&':'?')+this.data;
 				this.data = null;
 			}
+		},
+		isSuccess : function(){
+			var xhr = this.xhr;
+			try {
+                return !xhr.status && location.protocol === "file:" ||
+                (xhr.status >= 200 && xhr.status < 300 ) || xhr.status === 304 || xhr.status === 1223 || xhr.status === 0;
+            } catch(e) {}
+            return false;
 		},
 		init : function(){
 			
@@ -191,16 +200,20 @@
 			this.xhr.open(this.type.toUpperCase(),this.url,true);
 			this.xhr.onreadystatechange = function(){
 			
-				if(self.xhr.readyState == 4 && self.xhr.status==200){
-					var data = '';
-					if(self.dataType =='json'){
-						try{
-							data = (new Function('return '+self.xhr.responseText))();
-						}catch(e){window.console && console.log(e,e.message);}
+				if(self.xhr.readyState == 4){
+					if(self.isSuccess()){
+						var data = '';
+						if(self.dataType =='json'){
+							try{
+								data = (new Function('return '+self.xhr.responseText))();
+							}catch(e){window.console && console.log(e,e.message);}
+						}else{
+							data = self.xhr.responseText;
+						}
+						self.success && self.success(data);
 					}else{
-						data = self.xhr.responseText;
+						self.error && self.error();
 					}
-					self.success && self.success(data);
 					self.xhr.onreadystatechange = null;
 				}
 			};
