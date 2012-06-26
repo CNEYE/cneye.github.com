@@ -16,7 +16,7 @@ blockquote p{margin:0;padding:4px 0;}
 #nav {width:120px;margin-left:-160px;padding-right:40px;;float:left;font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.1em;text-transform: uppercase;}
 #nav li,#nav ul{list-style:none;}
 #nav li a{display:block;padding: .7em 1em;padding-right:0;color:#000;text-shadow:#ccc 1px 1px 7px;}
-#nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;text-shadow:#fcfcfc 1px 1px 7px;}
+#nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;text-shadow:#fcfcfc 1px 1px 7px;text-shadow:#888 2px 2px 2px;}
 #article {padding:.5em 0.4em;font-size:16px;line-height:20px;}
 #article img{border:1px solid #999;}
 #article pre {background:#f8f8f8;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:13px;line-height:19px;padding:6px 10px;overflow:auto;}
