@@ -19,3 +19,4 @@ blockquote p{margin:0;padding:4px 0;}
 #nav li a:hover{background:#1863a1;color:#fff;text-decoration: none;}
 #article {padding:.5em 0.4em;font-size:16px;}
 #article img{border:1px solid #999;}
+#article pre {background:#f8f8f8;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:13px;line-height:19px;padding:6px 10px;overflow:auto;}
