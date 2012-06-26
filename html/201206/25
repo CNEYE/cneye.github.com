@@ -4,6 +4,6 @@
 
 >我叫蜗眼，欢迎你！
 
-	if(isviewer(you)){
-		alert('Welcome to my website!');
+	if( isviewer ( you ) ){
+		alert( 'Welcome to my website!' );
 	}
