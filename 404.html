@@ -40,6 +40,8 @@
 				dataType : 'html',
 				success:function(html){
 					var title = html.match(match);
+					console.log(html);
+					window.html = html;
 					if(title){
 						document.getElementById('header').getElementsByTagName('h1')[0].innerHTML = title[1];
 						html = html.replace(match);
