@@ -1,7 +1,7 @@
 body {font-size:14px;font-family: Georgia, "Microsoft YaHei", serif;}
 div,span,li,ol,ul,code,pre,img,blockquote,a,dl,dt,dd,p,form{margin:0;padding:0;border:0}
 h1 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 2em;color:black;padding:5px;margin:0;text-shadow:#888 2px 2px 2px; }
-h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0;text-shadow:#888 2px 2px 2px; }}
+h2 {font-family: Georgia,serif,"Microsoft YaHei";font-size: 1.2em;color:black;padding:5px;margin:0;text-shadow:#888 2px 2px 2px; }
 a{color: #1863A1;text-decoration: none;}
 a:hover{color:#0181EB;text-decoration:underline;}
 ol,ul{list-style-position:inside;}
