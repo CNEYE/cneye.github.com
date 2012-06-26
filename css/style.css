@@ -32,7 +32,7 @@ blockquote p{margin:0;padding:4px 0;}
 #comcont li p.head .fl{position:absolute;left:37px;text-shadow:#ffc ;color:#aaa;}
 #comcont li p.comment{display:block;text-indent:2em;margin:0 5px;padding:10px;background:#f6f6f6;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
 #comcont li p.comment span.time{color:#ccc;padding-left:10px;}
-
+input,textarea{border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
 #compost li, #compost ul{list-style:none;}
 #compost li{padding:5px ;}
 #compost li input{width: 220px;height: 19px;line-height: 19px;border-color: #7C7C7C #BBB #BBB #7C7C7C;border-style: solid;border-width: 1px;color: #777;font-family: Arial,"宋体";font-size: 14px;line-height: normal;padding: 5px 4px 2px 4px;}
