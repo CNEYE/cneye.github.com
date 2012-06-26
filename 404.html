@@ -33,11 +33,17 @@
 		</div>
 		<script type="text/javascript" src="/js/article.js"></script>
 		<script>
+			var match = /^([\w\s]*)\n=+/m;
 			ajax({
 				url:'/html/201206/05',
 				type:'get',
 				dataType : 'html',
 				success:function(html){
+					var title = html.match(match);
+					if(title){
+						document.getElementById('header').getElementsByTagName('h1')[0].innerHTML = title[1];
+						html = html.replace(match);
+					}
 					document.getElementById('article').innerHTML=markdown.toHTML(html);
 				}
 			});
