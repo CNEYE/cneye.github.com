@@ -8,5 +8,5 @@ title: 主要页面
 	{% for p in tag%}
 		<li>+++{{ p }}+++</li>
 	{% endfor %}
-	<li>{{ tag }}--{{ tag.name }}-{{ tag.title }}-</li>
+	<li>{{ tag }}--{{ tag.name }}-{{ tag[0] }}-</li>
   {% endfor %}  </ul></div>
