@@ -2,7 +2,17 @@
 layout: index
 title: 主要页面
 ---
-<div id="content">  <h1>主页</h1>  <p>欢迎访问，下面是最近的文章：</p>  <ul id="list">  {% for post in site.posts %}
+
+<div id="content">  <h1>主页</h1>  <p>欢迎访问，下面是最近的文章：</p>
+  <h4>Category</h4>
+<ul>
+    //这里使用了 Jekyll 语法，会被编译，所以加多个"\"
+    {% for category in site.categories %}
+    <li><a href="/categories/{\{ category | first }\}/" title="view allposts">{{ category | first }} {{ category | last | size }}</a>
+    </li>
+    {% endfor %}
+</ul> <hr/>
+  <ul id="list">  {% for post in site.posts %}
 	<li>
 		{% for item in post %}
 			{{ item }}--
