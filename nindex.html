@@ -1,1 +1,5 @@
----layout: indextitle: 主页---<div id="content">  <h1>主页</h1>  <p>欢迎访问，下面是最近的文章：</p>  <ul id="list">  {% for post in site.posts %}    <li><a href="{{ post.url }}">{{ post.title }}</a> <span>Posted on {{ post.date | date_to_string }}</span></li>  {% endfor %}  </ul></div>
+---
+layout: index
+title: 主�
+---
+<div id="content">  <h1>主页</h1>  <p>欢迎访问，下面是最近的文章：</p>  <ul id="list">  {% for post in site.posts %}    <li><a href="{{ post.url }}">{{ post.title }}</a> <span>Posted on {{ post.date | date_to_string }}</span></li>  {% endfor %}  </ul></div>
