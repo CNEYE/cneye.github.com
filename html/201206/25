@@ -1,9 +1,0 @@
-第一篇Markdown文章
-================
-这是我的第一篇github博客，是用markdown语法发表的。
-
->我叫蜗眼，欢迎你！
-
-	if( isviewer ( you ) ){
-		alert( 'Welcome to my website!' );
-	}
