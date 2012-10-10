@@ -8,7 +8,7 @@ title: 主要页面
 <ul>
     //这里使用了 Jekyll 语法，会被编译，所以加多个"\"
     {% for category in site.categories %}
-    <li><a href="/categories/{\{ category | first }\}/" title="view allposts">{{ category | first }} {{ category | last | size }}</a>
+    <li><a href="/categories/{{ category | first }}/" title="view allposts">{{ category | first }} {{ category | last | size }}</a>
     </li>
     {% endfor %}
 </ul> <hr/>
