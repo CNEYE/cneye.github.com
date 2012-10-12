@@ -6,13 +6,13 @@
 		<dt class="title "><a href="About.html">about</a></dt>
 		<dt>Category</dt>
 		{% for category in site.categories %}
-			<dd><a href="/categorys?id={{ category | first }}" >{{ category | first }} <span>({{ category | last | size }}</span></a></dd>
+			<dd><a href="/categorys?id={{ category | first }}" >{{ category | first }} <span>({{ category | last | size }})</span></a></dd>
 		{% endfor %}
 	</dl>
 	<dl class="tags">
 		<dt>Tags</dt>
 		{% for tag in site.tags %}
-		<dd><a href="/tags?id={{ tag[0] }}">{{ tag[0] }}</a></dd>
+		<dd><a href="/tags?id={{ tag[0] }}">{{ tag[0] }} {{ tag | last |size}}</a></dd>
 		{% endfor %}
 	</dl>
 	<dl class="links">
