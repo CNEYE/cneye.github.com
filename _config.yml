@@ -2,6 +2,6 @@ title: @蜗眼
 describe: 记录学习，生活和工作！
 copyright: 所有文字内容在CC-by-sa-3.0协议下发布，任何人都可以在该协议条款的要求下自由使用这些内容。
 safe: false
-link:
+links:
 	- title: ge
-	  href: asdf
+	- href: asdf
