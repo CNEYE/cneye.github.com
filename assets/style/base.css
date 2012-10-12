@@ -61,6 +61,8 @@ pre {
 	padding:10px 0  45px 0;
 	font-size:12px;
 	color:#ccc;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
 }
 .article code{
 	background: #314D67;
