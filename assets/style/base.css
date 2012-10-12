@@ -180,6 +180,12 @@ pre {
 	-webkit-transition: opacity 0.3s;
 	-o-transition: opacity 0.3s;
 }
+.new {
+	color:#ccc;
+	font-size:12px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
 div.aside ul{
 	list-style:none;
 }
