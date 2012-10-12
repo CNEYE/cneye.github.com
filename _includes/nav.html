@@ -12,7 +12,7 @@
 	<dl class="tags">
 		<dt>Tags</dt>
 		{% for tag in site.tags %}
-		<dd><a href="/tags?id={{ tag }}">{{ tag }}</a></dd>
+		<dd><a href="/tags?id={{ tag[0] }}">{{ tag[0] }}</a></dd>
 		{% endfor %}
 	</dl>
 	<dl class="links">
