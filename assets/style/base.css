@@ -162,7 +162,9 @@ pre {
 	margin: 0 0 0.4em;
 	padding-top: 1.3em;
 }
-
+.post p {
+	text-indent: 2em;
+}
 .article {
 	position:relative;
 }
