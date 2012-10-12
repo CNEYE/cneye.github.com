@@ -1,0 +1,24 @@
+<div class="nav" >
+	<dl class="categorys">
+		<dt class="title"><a href="/">home</a></dt>
+		<dt class="title "><a href="Projects.html">projects</a></dt>
+		<dt class="title "><a href="Contact.html">Contact</a></dt>
+		<dt class="title "><a href="About.html">about</a></dt>
+		<dt>Category</dt>
+		{% for category in site.categories %}
+			<dd><a href="/categorys?id={{ category | first }}" >{{ category | first }} <span>({{ category | last | size }}</span></a></dd>
+		{% endfor %}
+	</dl>
+	<dl class="tags">
+		<dt>Tags</dt>
+		{% for tag in site.tags %}
+		<dd><a href="/tags?id={{ tag }}">{{ tag }}</a></dd>
+		{% endfor %}
+	</dl>
+	<dl class="links">
+		<dt>Links</dt>
+		{% for link in site.links %}
+		<dd><a href="{{ link.href }}" target="_blank">{{ link.title }}</a></dd>
+		{% endfor %}
+	</dl>
+</div>
