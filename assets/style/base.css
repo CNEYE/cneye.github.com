@@ -18,6 +18,9 @@ p {
 	line-height: 1.6em;
 	margin-bottom: 1.25em;
 }
+blockquote p{
+	margin-bottom:0.25em;
+}
 html {
 	background: #0D2E4C;
 }
@@ -38,10 +41,10 @@ a:hover, a:active {
 	color: #FFC76D;
 }
 
-pre,code{
+pre,code,blockquote{
 	font-family: Consolas, Inconsolata, 'Bitstream Vera Sans Mono', Menlo, Monaco, 'Andale Mono', 'Courier New', monospace;
 }
-pre {
+blockquote ,pre {
 	padding: 8px 0 12px 20px;
 	border-left: 4px solid #566D82;
 	margin-bottom: 1.25em;
