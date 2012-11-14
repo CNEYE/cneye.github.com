@@ -211,3 +211,7 @@ div.aside ul{
 .article ul {
 	list-style: square;
 }
+.alist{
+	margin-bottom:50px;
+}
+.alist h3{line-height:50px;}
