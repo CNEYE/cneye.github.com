@@ -47,9 +47,9 @@ title: 首页
 	</div>
 {% endfor %}
 </div>
-<div class="alist">
+<div class="alist article">
 	<h3>文章列表</h3>
-	<ul class="article">
+	<ul>
 		{% for post in site.posts offset:0 %}
 			<li><a href="" >{{ post.title }}</a></li>
 		{% endfor %}

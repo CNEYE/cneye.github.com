@@ -213,5 +213,7 @@ div.aside ul{
 }
 .alist{
 	margin-bottom:50px;
+	border-top: 1px dashed #8696A5;
+	margin-top: 50px;
 }
 .alist h3{line-height:50px;}
