@@ -6,8 +6,15 @@
 			</div>
 			<div class="article">
 				{{ page.content }}
+				<div class="aside">
+						<ul>
+							<li>时间: {{ page.date | date:"%B %b, %Y" }}</li>
+							<li>分类：{{ page.category }}</li>
+							<li>标签：{{ page.tags }}</li>
+						</ul>
+					</div>
 			</div>
-			<div class="footer">
+			<div class="footer" style="margin-top:30px;">
 				{{ site.copyright }}
 			</div>
 		</div>
