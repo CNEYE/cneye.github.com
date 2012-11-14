@@ -1,35 +1,0 @@
----
-layout: index
-title: 主要页面
----
-
-<div id="content">  <h1>主页</h1>  <p>欢迎访问，下面是最近的文章：</p>
-  <h4>Category</h4>
-<ul>
-    //这里使用了 Jekyll 语法，会被编译，所以加多个"\"
-    {% for category in site.categories %}
-    <li><a href="/categories/{{ category | first }}/" title="view allposts">{{ category | first }} {{ category | last | size }}</a>
-    </li>
-    {% endfor %}
-</ul> <hr/>
-  <ul id="list">  {% for post in site.posts %}
-	<li>
-		{% for item in post %}
-			{{ item }}--
-		{% endfor %}
-	</li>    <li>{{ site.tags.TAG }}<a href="{{ post.url }}">{{ post.title }}</a> {{ post.tags }} <span>Posted on {{ post.date | date_to_long_string }}</span></li>  {% endfor %}
-  {% for tag in site.tags %}
-	<li>{{ tag[0] }}-{{ tag[1] }}+{{ tag[3] }}</li>
-  {% endfor %}  </ul>
-  </div>
-<pre>    
-    .- =O= -.        .-====-.      ,-------.      .-=()=-.
-   /_-\'''/-_\      / / '' \ \     |,-----.|     /__----__\
-  |/  o) (o  \|    | | ')(' | |   /,'-----'.\   |/ (')(') \|
-   \   ._.   /      \ \    / /   {_/(') (')\_}   \   __   /
-   ,>-_,,,_ <.       >'=jf='<     `.   _   .'    ,'--__--'.
- /      .      \    /        \     /'-___-'\    /    :|    \
-(_)     .      (_) / copyriht \   /   ame   \  (_)   :|   (_)
- \_-----'____--/  (_)        (_) (_)_______(_)   |___:|____|
-  \___________/     |________|     \_______/     |_________|
-</pre>
