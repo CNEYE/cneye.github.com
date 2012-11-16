@@ -7,7 +7,7 @@
 	background:#0F192A;
 	border-radius: 4px;
 	color:#fff;
-	padding: 8px 0 12px 20px;
+	padding: 8px 0 12px 5px;
 	border-left: 4px solid #566D82;
 	margin-bottom: 1.25em;
 	margin-top: 1.25em;
@@ -21,6 +21,7 @@
 	margin: 0;
 	padding: 0;
 	border: none;
+	color:#fff;
 }
 
 .dp-highlighter a,
@@ -49,6 +50,7 @@
 	list-style: decimal; /* for ie */
 	margin: 0px 0px 1px 45px !important; /* 1px bottom margin seems to fix occasional Firefox scrolling */
 	padding: 0px;
+	color:#666;
 }
 
 .dp-highlighter.nogutter ol,
