@@ -7,7 +7,6 @@ category: game引擎
 
 <h2>JS游戏引擎列表</h2>
  
- <h4>游戏引擎</h4>
 <table>
 <tbody>
 <tr>
@@ -16,13 +15,6 @@ category: game引擎
 <th align="left">License</th>
 <th align="left">Type</th>
 <th align="left">Notes</th>
-</tr>
-<tr>
-<td align="left"><a href="http://renderengine.com/">The Render Engine</a></td>
-<td align="left">1.5.3</td>
-<td align="left">MIT</td>
-<td align="left"></td>
-<td align="left">跨浏览器; 大规模 API; 开源.&nbsp;<a href="http://renderengine.com/features.php">2</a></td>
 </tr>
 <tr>
 <td align="left"><a href="http://gamequery.onaluf.org/">gameQuery</a></td>
