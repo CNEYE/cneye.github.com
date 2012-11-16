@@ -52,7 +52,7 @@
 	padding: 0px;
 	color:#666;
 }
-
+.dp-highlighter li{color:#666;}
 .dp-highlighter.nogutter ol,
 .dp-highlighter.nogutter ol li
 {
