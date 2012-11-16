@@ -47,7 +47,6 @@
 	list-style: decimal; /* for ie */
 	margin: 0px 0px 1px 45px !important; /* 1px bottom margin seems to fix occasional Firefox scrolling */
 	padding: 0px;
-	color: #5C5C5C;
 }
 
 .dp-highlighter.nogutter ol,
@@ -62,8 +61,6 @@
 {
 	list-style: decimal-leading-zero; /* better look for others, override cascade from OL */
 	list-style-position: outside !important;
-	border-left: 3px solid #6CE26C;
-	color: #5C5C5C;
 	padding: 0 3px 0 10px !important;
 	margin: 0 !important;
 	line-height: 14px;
@@ -94,7 +91,6 @@
 
 .dp-highlighter ol li span
 {
-	color: black;
 	background-color: inherit;
 }
 
@@ -133,7 +129,7 @@
 {
 	padding: 3px 8px 3px 10px;
 	font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: silver; 
+	
 	padding-bottom: 10px;
 	border-left: 3px solid #6CE26C;
 }
