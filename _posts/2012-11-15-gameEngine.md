@@ -1,8 +1,8 @@
 ---
 layout: index
 title: HTML5 游戏引擎列表
-tags: 游戏
-category: game引擎
+tags: game
+category: game
 ---
 
 <h2>JS游戏引擎列表</h2>
