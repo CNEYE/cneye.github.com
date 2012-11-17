@@ -7,7 +7,7 @@
 	background:#0F192A;
 	border-radius: 4px;
 	color:#fff;
-	padding: 8px 0 12px 5px;
+	padding: 12px 0 12px 5px;
 	border-left: 4px solid #566D82;
 	margin-bottom: 1.25em;
 	margin-top: 1.25em;
@@ -111,23 +111,6 @@
 	display: none;
 }
 
-/* Additional modifications when in print-view */
-
-.dp-highlighter.printing
-{
-	border: none;
-}
-
-.dp-highlighter.printing .tools
-{
-	display: none !important;
-}
-
-.dp-highlighter.printing li
-{
-	display: list-item !important;
-}
-
 /* Styles for the tools */
 
 .dp-highlighter .tools
@@ -144,39 +127,8 @@
 	border-left: 0;
 }
 
-.dp-highlighter.collapsed .tools
-{
-	border-bottom: 0;
-}
 
-.dp-highlighter .tools a
-{
-	font-size: 9px;
-	color: #a0a0a0;
-	background-color: inherit;
-	text-decoration: none;
-	margin-right: 10px;
-}
-
-.dp-highlighter .tools a:hover
-{
-	color: red;
-	background-color: inherit;
-	text-decoration: underline;
-}
-
-/* About dialog styles */
-
-.dp-about { background-color: #fff; color: #333; margin: 0px; padding: 0px; }
-.dp-about table { width: 100%; height: 100%; font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; }
-.dp-about td { padding: 10px; vertical-align: top; }
-.dp-about .copy { border-bottom: 1px solid #ACA899; height: 95%; }
-.dp-about .title { color: red; background-color: inherit; font-weight: bold; }
-.dp-about .para { margin: 0 0 4px 0; }
-.dp-about .footer { background-color: #ECEADB; color: #333; border-top: 1px solid #fff; text-align: right; }
-.dp-about .close { font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; background-color: #ECEADB; color: #333; width: 60px; height: 22px; }
-
-/* Language specific styles */
+ 
 
 .dp-highlighter .comment, .dp-highlighter .comments { color: #008200; background-color: inherit; }
 .dp-highlighter .string { color: blue; background-color: inherit; }
