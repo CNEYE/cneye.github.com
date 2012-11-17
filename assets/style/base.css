@@ -52,6 +52,7 @@ blockquote ,pre {
 	background: #0F192A;
 	border-radius:4px;
 }
+hr{border-bottom: 1px dashed #CCC;border-top: none;}
 .clearfix:after{content:"\0020";display:block;height:0;clear:both}
 .clearfix{_zoom:1}
 *+html .clearfix{overflow:hidden}
