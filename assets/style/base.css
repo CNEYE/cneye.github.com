@@ -45,7 +45,7 @@ pre,code,blockquote{
 	font-family: Consolas, Inconsolata, 'Bitstream Vera Sans Mono', Menlo, Monaco, 'Andale Mono', 'Courier New', monospace;
 }
 blockquote ,pre {
-	padding: 8px 0 12px 20px;
+	padding: 8px 10px 12px 20px;
 	border-left: 4px solid #566D82;
 	margin-bottom: 1.25em;
 	margin-top:1.25em;
