@@ -219,3 +219,18 @@ div.aside ul{
 	margin-top: 50px;
 }
 .alist h3{line-height:50px;}
+
+/*代码高亮*/
+pre {
+	font-family: "Consolas", "Courier New", Courier, mono, serif;
+	width:99%;
+	overflow:auto;
+	margin:18px 0;
+	color:#666;
+	font-size:12px;
+}
+pre ol{
+	padding-left:24px;
+}
+pre ol li div{color:#fff;}
+pre ol .comments{}
