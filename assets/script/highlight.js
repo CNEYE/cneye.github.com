@@ -69,7 +69,7 @@
   		},
   		//渲染数据
   		rander: function(pre){
-  			var html= '<ol><li>'+this.cutter.join('</li><li>')+'</li></ol>',
+  			var html= '<ol><li><div>'+this.cutter.join('</div></li><li><div>')+'</div></li></ol>',
   				idx = this.replace.length-1 ,item;
   				html = this.builword('keyword',this.builword('builtin',html));
   				
