@@ -149,7 +149,7 @@
   		}
   	};
   	G.Highlighter = new Highlight;
-  
+  	
   	//加入js语法
   	Highlighter.addSyntax('jscript',{
   		//多行注释
