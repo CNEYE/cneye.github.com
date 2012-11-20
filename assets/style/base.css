@@ -223,7 +223,6 @@ div.aside ul{
 /*代码高亮*/
 pre {
 	font-family: "Consolas", "Courier New", Courier, mono, serif;
-	width:99%;
 	overflow:auto;
 	margin:18px 0;
 	color:#666;
