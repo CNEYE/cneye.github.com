@@ -35,7 +35,7 @@
   				this.replace = [];//标记替换对象
   				this.multideep	= 0;//标记当前多行注释深度
   				
-  				(pop=this.cutter.pop()) && (this.cutter.push(pop));
+  				(pop=this.cutter.pop()) //&& (this.cutter.push(pop));
   				
   				//多行注释
   				this.multi = this.nSyntax['multicomments'];
