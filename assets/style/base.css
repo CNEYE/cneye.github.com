@@ -232,6 +232,7 @@ pre {
 pre ol{
 	padding-left:24px;
 }
+pre ol li{line-height:0.7em}
 pre ol li div{color:#fff;}
 pre ol .comments{color:#61615d}
 pre ol .keyword{color:#688fb8}
