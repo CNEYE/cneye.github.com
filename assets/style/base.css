@@ -233,7 +233,7 @@ pre ol{
 }
 .article pre ol li{line-height:0.7em}
 pre ol li div{color:#fff;}
-pre ol .comments{color:#61615d}
+pre ol .comments,pre ol .singlecomments{color:#61615d}
 pre ol .keyword{color:#688fb8}
 pre ol .builtin{color:#c25c03}
 pre ol .string,pre ol .number{color:#d0a022}
