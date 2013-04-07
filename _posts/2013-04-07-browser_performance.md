@@ -12,7 +12,7 @@ category: browser
     + 页面渲染之后
         + 如何判断？
 2. dom树构建和渲染UI时、js运算时
-    + 原理资料：[浏览器的渲染机制](http://hi.baidu.com/821402834/item/950fadfa82b3fdbe31c199ca) 浏览器的渲染机制]] 、[深入理解javascript定时机制](http://www.doc88.com/p-707864123247.html) 、[requestAnimationFrame 函数介绍](http://msdn.microsoft.com/zh-cn/library/ie/hh920765(v=vs.85).aspx)
+    + 原理资料：[浏览器的渲染机制](http://hi.baidu.com/821402834/item/950fadfa82b3fdbe31c199ca)、[深入理解javascript定时机制](http://www.doc88.com/p-707864123247.html) 、[requestAnimationFrame 函数介绍](http://msdn.microsoft.com/zh-cn/library/ie/hh920765(v=vs.85).aspx)
     + 浏览器内核中javascript引擎线程和界面渲染线程是互斥的，即**其中一个运行的时候另一个将会挂起**。
     + 调用setTimeout、setInterval会将该“任务”放到javascript的执行队列之后（**排队**）
     + setTimeout和requestAnimationFrame 的一些区别
