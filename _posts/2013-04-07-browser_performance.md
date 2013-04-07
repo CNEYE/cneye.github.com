@@ -28,7 +28,7 @@ category: browser
     + 更好的方案 for what？
 	
 ##如何从侧面判断浏览器繁忙程度 (非资源)##
-1. 按道理 setInterval,requestAnimationFrame函数的执行时间间隔应该固定，我们希望的理论状态。但是在通常情况下，这个执行时间间隔是由延迟的。
+1. 按道理 setInterval,requestAnimationFrame函数的执行时间间隔应该固定，我们希望的理论状态。但是在通常情况下，这个执行时间间隔是存在延迟的。
     + WHY？
         + 当浏览器渲染的时候（界面渲染线程时间）会冻结javascript解析线程，javascript执行队列也就挂起了。
         + 当js执行的时候（javascript解析线程时间）会冻结界面渲染线程，requestAnimationFrame的获得通知的时间也就挂起了。
