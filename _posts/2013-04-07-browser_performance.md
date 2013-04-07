@@ -26,7 +26,7 @@ category: browser
     + 通过hooks浏览器支援操作函数、类（appendChild、Image，Audio），配合domready
         + 在浏览器发生该类有可能产生支援请求的函数、类的调用的时候监听支援的加载、完成情况。
     + 更好的方案 for what？
-          * 
+	
 ##如何从侧面判断浏览器繁忙程度 (非资源)##
 1. 按道理 setInterval,requestAnimationFrame函数的执行时间间隔应该固定，我们希望的理论状态。但是在通常情况下，这个执行时间间隔是由延迟的。
     + WHY？
