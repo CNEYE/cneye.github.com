@@ -2,7 +2,7 @@
 layout: index
 title: 如何探测浏览器的繁忙程度 
 tags: 浏览器、性能
-category: 浏览器
+category: browser
 ---
 
 ##浏览器的繁忙程度受哪些因素？##
