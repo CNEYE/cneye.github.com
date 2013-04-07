@@ -220,6 +220,10 @@ div.aside ul{
 }
 .alist h3{line-height:50px;}
 
+ol ul ,ul ul,ol ol ,ul ol {
+	margin-left:20px;
+}
+
 /*代码高亮*/
 pre {
 	font-family: "Consolas", "Courier New", Courier, mono, serif;
