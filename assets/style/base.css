@@ -244,3 +244,6 @@ pre ol .string,pre ol .number{color:#d0a022}
 #fly{position:fixed;height:109px;width:64px;background:url(../rocket.png) no-repeat right top;right:50%;margin-right:400px;bottom:50px;cursor:pointer;opacity:0.5;filter:alpha(opacity=50)}
 #fly:hover{background-position:left top;opacity:1;filter:alpha(opacity=100)}
 #fly.flying {background:url(../rocket_flying.gif) no-repeat left top;opacity:1;filter:alpha(opacity=100)}
+.MeAbout li{display: inline-block;padding-right:45px;}
+.MeAbout h3{color:#ccc;opacity: 0.5;
+filter: alpha(opacity=50);}
