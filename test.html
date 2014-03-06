@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta  charset="utf-8"/>
+		<meta name="keywords" content="前端菜鸟 前端工程师 蜗眼" />	
+		<meta name="description" content="游离于互联网的前端工程师，关注创新前端技术，关注自实现现有技术" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="title" content="蜗眼的文章列表" />
+		<title> @蜗眼-首页</title>
+		<link rel="stylesheet" href="./assets/style/base.css" type="text/css"/>
+		<script src="./assets/script/main.js" type="text/javascript"></script>
+		<!--[if IE 6]>
+			<script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<!--[if IE 6]>
+		<style>body,html{overflow:hidden;}</style>
+		<div style="position:absolute;padding-left:40px;;width:100%;height:4009px;background:#000;top:0;left:0;z-index:11;"></div>
+		<div style="position:absolute;width:400px;height:50px;line-height:50px;font-size:50px;font-weight:bold;color:#fff;z-index:12;top:50%;left:50%;margin-top:-25px;margin-left:-200px;">Let's kill IE 6!</DIV>
+	<![endif]-->
+
+	<div class="wraper index">
+		<div class="content"  >
+			<div class="main clearfix">
+	<div class="article">
+			<h1>@蜗眼</h1>
+			<div>
+				<p>这里是<strong>蜗眼</strong>同志在互联网上的一个栖息地，他好不容易才找到这样一个净土，就不要再驱赶他了吧！</p>	
+				<p><strong>蜗眼</strong>  是一个刚出道不久的前端工程师，他入世不深还很菜，他有点高傲、有点自大。在这里我恳请大家原谅他的高傲、自大。</p>
+				
+<blockquote class="inr">现在的人变懒了，都不肯去造“轮子”，以至于越来越多的人只会使用轮子了。他们不知到这个轮子是如何产生的，更不知道这个轮子的所有细节以及制作这个轮子时所犯过的过错... 所以我推崇"独立思考制作轮子"的过程！</blockquote>
+
+			</div>
+	</div>
+					<div class="article">
+						<h2>关于我</h2>
+						<div class="resume">
+							<p>互联网花名<strong>蜗眼</strong>、88年出生于地球<p>
+							<ul>
+								<li><label>学习历程</label> 重庆师范大学（2019-2012）</li>
+								<li><label>工作历程</label>
+									@猪八戒威客网（重庆，2012-2013)<br/>
+									@阿里巴巴-天猫（杭州，2013-2014）
+								</li>
+							</ul>
+							<p>联系我：iceet[at]uoeye.com</p><p>[从蜗牛的眼睛里看世界，蜗牛虽小但眼内的世界同样五彩缤纷]</p>
+						</div>
+						<div class="aside">
+							人生在世也就那么几十年，是荒废着过还是充实着过，就看你自己了！
+						</div>
+					</div>
+				
+					<div class="article">
+						<div class="MeAbout">
+						<h3>微项目</h3>
+						<ul>
+							<li><a href="https://github.com/CNEYE/Tiny" title="一个简单的基于smarty语法的模版函数" target="_blank">Tiny前端模版</a></li>
+							<li><a href="https://github.com/CNEYE/Jot" target="_blank" title="一个简单实用的dom选择器">Jot微选择器</a></li>
+							<li><a href="https://github.com/CNEYE/Highlight" title="一个简单实用的语法高亮函数" target="_blank">语法高亮器</a></li>
+							<li><a href="https://github.com/CNEYE/cpuload" title="一个简单的跨终端的页面性能分析折线图工具" target="_blank">性能分析插件</a></li>
+						</ul>
+						</div>
+					</div>
+</div>
+
+<div class="new">最新文章</div>
+<div class="article post">
+
+	<h1>如何探测浏览器的繁忙程度</h1>
+	
+	<div class="article">
+		<h2 id="section">浏览器的繁忙程度受哪些因素？</h2>
+<ol>
+  <li>资源加载时
+    <ul>
+      <li>页面渲染之前
+        <ul>
+          <li>可以判断为浏览器资源加载繁忙，domready之后就为资源加载空闲</li>
+        </ul>
+      </li>
+      <li>页面渲染之后
+        <ul>
+          <li>如何判断？</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>dom树构建和渲染UI时、js运算时
+    <ul>
+      <li>原理资料：<a href="http://hi.baidu.com/821402834/item/950fadfa82b3fdbe31c199ca">浏览器的渲染机制</a>、<a href="http://www.doc88.com/p-707864123247.html">深入理解javascript定时机制</a> 、<a href="http://msdn.microsoft.com/zh-cn/library/ie/hh920765(v=vs.85).aspx">requestAnimationFrame 函数介绍</a></li>
+      <li>浏览器内核中javascript引擎线程和界面渲染线程是互斥的，即<strong>其中一个运行的时候另一个将会挂起</strong>。</li>
+      <li>调用setTimeout、setInterval会将该“任务”放到javascript的执行队列之后（<strong>排队</strong>）</li>
+      <li>setTimeout和requestAnimationFrame 的一些区别
+        <ul>
+          <li>回调函数执行时间：requestAnimationFrame 在浏览器需要<strong>更新页面显示</strong>时（而且仅在这种情况下）获得通知，而setTimeout函数是在javascript执行队列执行到该回调“任务”的时候才会获得通知</li>
+          <li>requestAnimationFrame 在浏览器最小化不会有通知</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="section-1">如何判断浏览器资源加载繁忙状态</h2>
+<ol>
+  <li>方案（仅仅是方案，没有验证）
+    <ul>
+      <li>通过网速判断
+        <ul>
+          <li>通过加载一个资源的前后时间差，判断是否有大量资源在下载</li>
+        </ul>
+      </li>
+      <li>通过hooks浏览器支援操作函数、类（appendChild、Image，Audio），配合domready
+        <ul>
+          <li>在浏览器发生该类有可能产生支援请求的函数、类的调用的时候监听支援的加载、完成情况。</li>
+        </ul>
+      </li>
+      <li>更好的方案 for what？</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="section-2">如何从侧面判断浏览器繁忙程度 (非资源)</h2>
+<ol>
+  <li>按道理 setInterval,requestAnimationFrame函数的执行时间间隔应该固定，我们希望的理论状态。但是在通常情况下，这个执行时间间隔是存在延迟的。
+    <ul>
+      <li>WHY？
+        <ul>
+          <li>当浏览器渲染的时候（界面渲染线程时间）会冻结javascript解析线程，javascript执行队列也就挂起了。</li>
+          <li>当js执行的时候（javascript解析线程时间）会冻结界面渲染线程，requestAnimationFrame的获得通知的时间也就挂起了。</li>
+          <li>如果界面渲染比较繁忙或则JS执行比较繁忙。则相应的javascript解析线程、界面渲染线程的挂起时间就会更久了。</li>
+        </ul>
+      </li>
+      <li>HOW ？ 
+        <ul>
+          <li>尝试用setInterval，和requestAnimationFrame函数的执行延迟时间来侧面体现浏览器  dom树构建和渲染UI 和 JS执行渲染的繁忙程度。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+		<div class="aside">
+			<ul>	
+				<li>时间: April Apr, 2013</li>
+				<li>分类：browser</li>
+				<li>标签：浏览器、性能</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+<div class="alist article">
+	<h3>文章列表</h3>
+	<ul>
+		
+			<li><a href="/browser/2013/04/07/browser_performance.html" >如何探测浏览器的繁忙程度</a>
+			</li>
+		
+			<li><a href="/javascript/2012/11/17/emitter.html" >什么是事件广播（Emitter）</a>
+			</li>
+		
+			<li><a href="/javascript/2012/11/16/deferred.html" >什么是延迟列表（Deferred）</a>
+			</li>
+		
+			<li><a href="/game/2012/11/15/engine.html" >HTML5 游戏引擎列表</a>
+			</li>
+		
+	</ul>
+</div>
+
+			<div class="footer">
+				Copyright © 2014 所有文字内容在CC-by-sa-3.0协议下发布。
+			</div>
+		</div>
+<script type="text/javascript">  
+	Highlighter.HighlightAll();
+</script>
+<div id="fly" style="bottom:-109px;" class="flying" title="到顶部"></div>
+
+</body>
+</html>
+
