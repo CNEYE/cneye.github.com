@@ -159,9 +159,8 @@ hr{border-bottom: 1px dashed #CCC;border-top: none;}
 .post h1{
 	padding:60px 0 25px 0px;
 	font-size: 1.9em;
-	text-shadow: 0 2px 2px black;
+	text-shadow: 0 2px 4px #ddd;
 	padding-top: 1.5em;
-	border-bottom:1px solid #ccc;
 	margin-bottom:30px;
 }
 .post h2{
