@@ -250,3 +250,510 @@ filter: alpha(opacity=50);padding-bottom:10px;padding-top:20px;}
 .resume ul{padding:10px 0;}
 .resume li{list-style: none;position: relative;padding-left:80px;}
 .resume li label {display: block;width:70px;position: absolute;top:0;left:0;;padding-right:10px;}
+
+strong ,.MeAbout li a{
+  display: inline-block;
+  transform-origin: center center;
+}
+/* line 24, ../sass/_shake.scss */
+.MeAbout li a:hover{
+  animation-name: abase;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+strong {
+  animation-name: alittle;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes abase {
+  /* line 19, ../sass/_mixins.scss */
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  2% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  4% {
+    transform: translate(-0.5px, -2.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  6% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  8% {
+    transform: translate(-2.5px, 0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  10% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  12% {
+    transform: translate(1.5px, 0.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  14% {
+    transform: translate(1.5px, -2.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  16% {
+    transform: translate(-2.5px, -1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  18% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  20% {
+    transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  22% {
+    transform: translate(-1.5px, -2.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  24% {
+    transform: translate(0.5px, 0.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  26% {
+    transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  28% {
+    transform: translate(0.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  30% {
+    transform: translate(-0.5px, -1.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  32% {
+    transform: translate(-2.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  34% {
+    transform: translate(-1.5px, 1.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  36% {
+    transform: translate(-2.5px, -0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  38% {
+    transform: translate(-2.5px, -2.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  40% {
+    transform: translate(-0.5px, -0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  42% {
+    transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  44% {
+    transform: translate(0.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  46% {
+    transform: translate(1.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  48% {
+    transform: translate(-2.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  50% {
+    transform: translate(0.5px, 1.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  52% {
+    transform: translate(-1.5px, -2.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  54% {
+    transform: translate(1.5px, -1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  56% {
+    transform: translate(1.5px, 0.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  58% {
+    transform: translate(-2.5px, 1.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  60% {
+    transform: translate(0.5px, 0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  62% {
+    transform: translate(-2.5px, -1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  64% {
+    transform: translate(0.5px, 0.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  66% {
+    transform: translate(1.5px, -0.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  68% {
+    transform: translate(0.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  70% {
+    transform: translate(-1.5px, -2.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  72% {
+    transform: translate(-1.5px, 0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  74% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  76% {
+    transform: translate(1.5px, -0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  78% {
+    transform: translate(-1.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  80% {
+    transform: translate(-0.5px, -1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  82% {
+    transform: translate(1.5px, -1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  84% {
+    transform: translate(0.5px, 1.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  86% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  88% {
+    transform: translate(-2.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  90% {
+    transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  92% {
+    transform: translate(0.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  94% {
+    transform: translate(0.5px, 1.5px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  96% {
+    transform: translate(-1.5px, 1.5px) rotate(-1.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  98% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg);
+  }
+}
+
+@keyframes alittle {
+  /* line 19, ../sass/_mixins.scss */
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  2% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  4% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  6% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  8% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  10% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  12% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  14% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  16% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  18% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  20% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  22% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  24% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  26% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  28% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  30% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  32% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  34% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  36% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  38% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  40% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  42% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  44% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  46% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  48% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  50% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  52% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  54% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  56% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  58% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  60% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  62% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  64% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  66% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  68% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  70% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  72% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  74% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  76% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  /* line 26, ../sass/_mixins.scss */
+  78% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+  82% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+  84% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+  86% {
+    transform: translate(0px, -1px) rotate(-0.5deg);
+  }
+  88% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+  90% {
+    transform: translate(0px, 0px) rotate(-0.5deg);
+  }
+
+  92% {
+    transform: translate(-1px, 0px) rotate(-0.5deg);
+  }
+
+  94% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+  96% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+  98% {
+    transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+}
