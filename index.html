@@ -8,9 +8,9 @@ title : 首页
 	<div class="article">
 			<h1>@蜗眼</h1>
 			<div>
-				<p>这里是<strong>蜗眼</strong>同志在互联网上的一个栖息地，他好不容易才找到这样一个净土，就不要再驱赶他了吧！</p>	
+				<p>这里是<strong>蜗眼</strong>同志在互联网上的一个栖息地，他好不容易才找到这样一个净土，就不要再驱赶他了吧！</p>
 				<p><strong>蜗眼</strong>是一个刚出道不久的<strong>前端工程师</strong>，他入世不深还很菜，他有点高傲、有点自大。在这里我恳请大家原谅他的高傲、自大。</p>
-				
+
 <blockquote class="inr">现在的人变懒了，都不肯去造“轮子”，以至于越来越多的人只会使用轮子了。他们不知到这个轮子是如何产生的，更不知道这个轮子的所有细节以及制作这个轮子时所犯过的过错... 所以我推崇"独立思考制作轮子"的过程！</blockquote>
 
 			</div>
@@ -32,7 +32,7 @@ title : 首页
 							人生在世也就那么几十年，是荒废着过还是充实着过，就看你自己了！
 						</div>
 					</div>
-				
+
 					<div class="article">
 						<div class="MeAbout">
 						<h3>微项目</h3>
@@ -43,6 +43,11 @@ title : 首页
 							<li><a href="https://github.com/CNEYE/cpuload" title="一个简单的跨终端的页面性能分析折线图工具" target="_blank">性能分析插件</a></li>
 							<li><a href="https://github.com/CNEYE/iframeCross" target="_blank" title="一个iframe跨域双向通信解决方案">IFRAME无代理跨域通信</a></li>
 						</ul>
+						<h3>DEMO</h3>
+						<ul>
+							<li><a href="/demo/fireworks.html" title="一个简单的基于smarty语法的模版函数" target="_blank">可定制的烟花</a></li>
+						</ul>
+
 						</div>
 					</div>
 </div>
@@ -51,11 +56,11 @@ title : 首页
 <div class="article post">
 {% for post in site.posts offset:0 limit:1 %}
 	<h1>{{ post.title }}</h1>
-	
+
 	<div class="article">
 		{{ post.content}}
 		<div class="aside">
-			<ul>	
+			<ul>
 				<li>时间: {{ post.date | date:"%B %b, %Y" }}</li>
 				<li>分类：{{ post.category }}</li>
 				<li>标签：{{ post.tags }}</li>
