@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>父文本框</title>
+<script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy.js"></script>
+<script src="./fireworks.js"></script>
+<script src="firemaker.js"></script>
+
+</head>
+<body>
+
+<div style="position:absolute;border:1px solid #ccc;;width:600px;height:400px;top:100px;left:100px;background:#fff;">
+	<canvas id="canvas" width="600" height="400"></canvas>
+
+	<canvas id="canvas_view" width="600" height="400" style="position:absolute;top:0;left:0;z-index:111;display:none;"></canvas>
+
+	<div style="position:absolute;background:#fff;width:100px;height:67px;top:0px;left:650px;">
+		<h3 style="position:absolute;top:-40px;">烟花画板</h3>
+		<canvas id="canvas_thumb" width="100" height="67" style="border:1px solid #ccc;"></canvas>
+	</div>
+	<style>
+		ul,li{padding:0;margin:0;list-style: none;font-size: 12px;cursor: pointer;}
+		li{margin-top:10px;padding:5px;}
+	</style>
+
+	<div style="position:absolute;background:#fff;width:100px;height:auto;top:100px;left:650px;" >
+		<h3 style="position:absolute;top:-30px;cursor:pointer;" id="fire">播放</h3>
+		<ul id="action">
+			<li data-action="drawImage">插入图片（居中）</li>
+			<li data-action="drawImage1">插入图片（自定位置）</li>
+			<li data-action="clearRect">清屏</li>
+		</ul>
+	</div>
+
+	<script>
+		KISSY.use('mui/firemaker,mui/fireworks',function(S,Firemaker,Fireworks){
+			var $ = S.Node.all;
+			var thumb = $('#canvas_thumb');
+			var fire=new Firemaker('#canvas');
+			fire.on('draw',function(){
+				//复制到
+				fire.copy(thumb)
+			});
+			//播放
+			$('#fire').on('click',function(){
+				//fire.point();
+				var t= new Fireworks(window,fire.point(),{
+					//设置爆炸中心点的范围
+					bombRectWidth: 800,
+					bombRectHeight: 600,
+					bombRectOffset: {left:100,top:100}
+				});
+				fire.clearRect();
+				//fire.clearRect();
+				t.play();
+			});
+			$('#action').on('click',function(e){
+				var target = $(e.target);
+				if (e.target.nodeName == 'LI'){
+					switch(target.attr('data-action')){
+						case 'clearRect':
+							fire.clearRect();
+							break;
+						case 'drawImage':
+							fire.image('./t.jpg',true);
+							break;
+						case 'drawImage1':
+							fire.image('./t.jpg',{left:10,top:10},100,100);
+							break;
+					}
+				}
+			})
+		});
+	</script>
+</div>
+</body>
+</html>
